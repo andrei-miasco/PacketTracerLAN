@@ -18,87 +18,77 @@ Add all of the end devices: 3 PCs, 1 printer, and 1 wireless laptop.
 <img src="https://imgur.com/vVX6b4Y.png" height="80%" width="80%" alt=/>  
 <br/>
 <br/>
-<img src="https://imgur.com/Qph3VKh.png" height="80%" width="80%" alt=/>
+Add all networking devices: 1 switch, 1 router, 1 wireless router
+<img src="https://imgur.com/n8M3eu4.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-<img src="https://imgur.com/KPuyH8n.png" height="80%" width="80%" alt=/>
+Use straight through cable to connect PCs, printer, and router to the switch. Straight through will be used to connect devices that are not alike. Use first available ports.
+<img src="https://imgur.com/p2T9sT1.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Configure IP for internal network. DC serves as gateway, and AD will provide DNS,configure as own IP or use loopback address: <br/>
-<img src="https://imgur.com/IYatyc8.png" height="80%" width="80%" alt=/>
+Since they are like devices, use a copper crossover cable to connect the router to the internet port on the wireless router.
+<img src="https://imgur.com/u0QyZCk.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Rename PC as a domain controller:  <br/>
-<img src="https://imgur.com/pL6f21g.png" height="80%" width="80%" alt=/>
+Optional step, provide IP addressing schemes to make configuring IPs easier later.
+<img src="https://imgur.com/IMJcVpI.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Install Active Directory Domain Services:  <br/>
-<img src="https://imgur.com/D6hFACr.png" height="80%" width="80%" alt=/>
+Configure the default gateway on the router for the wired network. 
+<img src="https://imgur.com/nlYRM9O.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Promote server to a domain controller :  <br/>
-<img src="https://imgur.com/kOT6dOp.png" height="80%" width="80%" alt=/>
+Configure gateway for wireless network and save configurations.
+<img src="https://imgur.com/xtC1J14.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Create an organizational unit to add a dedicated domain admin account:  <br/>
-<img src="https://imgur.com/YDXL1fI.png" height="80%" width="80%" alt=/>
+Enable/open the router ports for both wired and wireless networks. Once finished, icons will turn green
+<img src="https://imgur.com/J62yUSa.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Create account and promote it to an admin. Sign out and sign into new admin account: <br/>
- <img src="https://imgur.com/DzSS8XF.png" height="80%" width="80%" alt=/>
+<img src="https://imgur.com/3O5BRi2.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Install Remote Access and configure Network Address Translation to the INTERNET network: <br/>
-<img src="https://imgur.com/BL0G20C.png" height="80%" width="80%" alt=/>
+Configure and set up DHCP for the wired and wireless networks. Name accordingly and use ip schemes you thought of earlier.
+<img src="https://imgur.com/5XU6c4G.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-<img src="https://imgur.com/2Wj1HON.png" height="80%" width="80%" alt=/>
+To check, click onto a PC, enable DHCP, and it will say that DHCP request was successful. Confirm on all PCs.
+<img src="https://imgur.com/bcKTcMD.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Install DHCP to allow clients to receive an IP address automatically:
-<img src="https://imgur.com/Q8BxY9z.png" height="80%" width="80%" alt=/>
+Open wireless router and change SSID in the gui, after renaming save changes.
+<img src="https://imgur.com/xNRxz9h.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Go into DHCP to configure the scope and set IP of DC as default gateway :
-<img src="https://imgur.com/rDvFsbm.png" height="80%" width="80%" alt=/>
+In the wireless security tab, change the security mode and add a password for the wireless router. 
+<img src="https://imgur.com/BL7oKQg.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-<img src="https://imgur.com/ZTLx1DA.png" height="80%" width="80%" alt=/>
+Open physical tab in the laptop. Drag and drop wifi connector to the side of the laptop.
+<img src="https://imgur.com/52mJ4Yh.png.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Open internet explorer and paste link to powershell script. Download and 'Save As' to the desktop.
-<img src="https://imgur.com/t3MgcZm.png" height="80%" width="80%" alt=/> 
+<img src="https://imgur.com/emGorXA.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Open zipped folder and drag the script onto desktop.
-<img src="https://imgur.com/IzPsSM7.png" height="80%" width="80%" alt=/>  
+In the desktop tab, click PC wireless and connect the laptop to the wireless router using the password you gave.  
+<img src="https://imgur.com/ee99mln.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Run Windows PowerShell ISE and open the folder to start script.
-<img src="https://imgur.com/hSIVohd.png" height="80%" width="80%" alt=/>   
+<img src="https://imgur.com/4cqnwgn.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Enable the execution of all scripts (for lab purposes only). Run PowerShell script and let it create all the users. 
-<img src="https://imgur.com/y27rwAV.png" height="80%" width="80%" alt=/> 
+The link information tab will confirm if you have successfully connected.
+<img src="https://imgur.com/OhfJK8g.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-Create second VM, change network adapter settings to Internal Network, and install Windows 10 ISO:
-<img src="https://imgur.com/mCTId00.png" height="80%" width="80%" alt=/>
+Set an ip address for the printer. The ip will be static in order for the printer to always keep the same address.
+<img src="https://imgur.com/axwDS4p.png" height="80%" width="80%" alt=/>
 <br />
 <br />
-<img src="https://imgur.com/j82UVni.png" height="80%" width="80%" alt=/>
-<br />
-<br />
-Open command line to run ipconfig to confirm and ping a website to confirm internet connection to DC:
-<img src="https://imgur.com/icyr0sD.png" height="80%" width="80%" alt=/>
-<br />
-<br />
-Lastly, rename the PC and join the domain:
-<img src="https://imgur.com/N7ucZ87.png" height="80%" width="80%" alt=/>
-<br />
-<br />
-When signing back into the domain controller, the client computer will be shown in the active directory.
-<img src="https://imgur.com/4PMYR05.png" height="80%" width="80%" alt=/>
+Lastly, enter the command prompt from any pc and ping the address for the printer to check connectivity.
+<img src="https://imgur.com/uT9GGco.png" height="80%" width="80%" alt=/>
  
 </p>
 
